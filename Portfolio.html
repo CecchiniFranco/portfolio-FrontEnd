@@ -5,7 +5,10 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+        <title>Franco D. Cecchini</title>
         <style>
             body{
                 margin: 0;
@@ -28,6 +31,8 @@
             .header{
                 width: 100%;
                 height: 730px;
+                position: relative;
+                
                 /*background-color: rgb(0, 0, 0);*/
             }
 
@@ -38,12 +43,51 @@
                 object-position: center center;
             }*/
 
-            video{
-                object-fit: cover;
-                width: 100%;
-                height: 100%;
-                object-position: center center;
-            }
+                video{
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                    object-position: center center;
+                    filter: grayscale(0);
+                    filter: blur(0);
+                    
+                    
+                    
+                }
+                .aurea1{
+                    font-size: 262px;
+                    height: 450px;
+                    width: 730px;
+                    padding: 2px;                    
+                    border: 0px dashed rgb(255, 255, 255);
+                    position: absolute;
+                    top: 130px;
+                    left: 595px;
+                    z-index: 100;
+                    overflow: hidden;
+                    text-align: center;
+                    font-family: 'Cinzel', serif;
+                    color: rgba(0, 0, 0, 0.016);
+                }
+                .aurea2{
+                    font-size: 30px;
+                    color: rgb(0, 0, 0);
+                    height: 172px;
+                    width: 1466px;
+                    padding: 2px;                    
+                    border: 0.5px dashed rgba(255, 255, 255, 0);
+                    position: absolute;
+                    top: 62%;
+                    bottom: 38%;
+                    left: 227px;
+                    font-family: 'Cinzel', serif;
+                    
+                    overflow: hidden;
+                    text-align: center;
+                }
+                span{
+                    font-size: 49px;
+                }
             .main{
                 width: auto;
             }  
@@ -51,17 +95,17 @@
                     width: auto;
                 }
                     .intro{
-                        height: 280px;
+                        height: 278px;
                         background-color: white;
                     }
-                    .experience{
+                    /*.experience{
                         height: 450px;
                         background-color: rgb(228, 228, 228);
 
-                    }
+                    }*/
                     .education{
                         height: 450px;
-                        background-color: rgb(31, 31, 31);
+                        background-color: rgb(233, 233, 233);
 
                     }
                     .skills{
@@ -129,7 +173,7 @@
                 }
                     .s1{
                         height: 520px;
-                        background-color: rgb(31, 31, 31);
+                        background-color: rgb(117, 117, 117);
                         
 
                     }
@@ -138,6 +182,13 @@
                 text-align: center;
                 padding-top: 30px;
                 
+                
+            }
+            .footer1{
+                font-family: 'Cinzel', serif;
+                font-size: 16px;
+                color: rgb(117, 117, 117);
+
             }
 
 
@@ -156,7 +207,18 @@
         
         <header class="header">
 
-            <video src="videos/video10.mp4" autoplay muted loop></video>
+            <video src="videos/video1.mp4" autoplay muted loop>
+            </video>
+            <div class="aurea1"><b>ΔΨΩ</b>
+            </div>
+                <div class="aurea2">│ A complex system that works is invariably found to have evolved from a simple system. │<br>
+                John Gall<br><br>
+                    
+                    <span>│Franco D. Cecchini • Full Stack Developer Jr.│<br></span>
+                    
+                    
+                </div>
+
             
             
             <!--<img src="Imagenes/v3.jpg" class="img" alt="">-->
@@ -166,18 +228,18 @@
         <main>
             <section class="section1-hero">
                 <div class="intro"></div>
-                <div class="experience"></div>
+                <!--<div class="experience"></div>--> <!-- Teniendo en cuenta que no cuento con experiencia aún, he decidido obviar esta sección hasta que vaya adquiriendola, dejo latente su desarrollo.-->
                 <div class="education"></div>
                 <div class="skills"></div>
             </section>
-            <section class="section2-projects">
+            <!--<section class="section2-projects">
                 <div class="p1"></div>
                 <div class="p2"></div>
                 <div class="p3"></div>
                 <div class="p4"></div>
                 <div class="p5"></div>
                 <div class="p6"></div>
-            </section>
+            </section>--> <!-- Teniendo en cuenta que no cuento con proyectos desarrollados, mas si en proceso, los iré subiendo uno por uno.-->
             <section class="section3-services">
                 <div class="s1"></div>
             </section>
@@ -200,10 +262,8 @@
                     <div></div> 
                     <div></div>    
                 </nav>-->
-                <section class="footer">
-                   
-                       2023 - Franco D. Cecchini, Argentina.
-                   
+                <section class="footer1">
+                    © MMXXIII.                   
                 </section>
             </div>
         </footer>
